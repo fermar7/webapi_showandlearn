@@ -12,8 +12,29 @@
     </head>
     <body>
         <!-- HTML goes here -->
+        <h1>Post-your-stuff.com</h1>
 
-        
+
+        <div id="newPost">
+            <span><b><i>Add a new Post</i></b></span>
+            <form id="newPostForm">
+                <label for="username"><b>Username</b></label>
+                <input name="username" id="username" type="text"/>
+                <br/>
+                <label for="usertag"><b>User tag</b></label>
+                <input name="usertag" id="usertag" type="text"/>
+                <br/>
+                <label for="postText"><b>Text</b></label>
+                <br/>
+                <textarea name="postText" id="postText" type="text" rows="6" cols="60"></textarea>
+                <br/>
+                <button type="button" id="sendPost" onclick="sendPost">Post!</button>
+            </form>
+        </div>
+
+        <hr />
+
+        <div id="posts"></div>
 
 
     </body>
